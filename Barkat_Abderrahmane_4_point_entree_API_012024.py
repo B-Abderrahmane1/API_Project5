@@ -14,7 +14,7 @@ labels = pd.read_csv('labels.csv')
 ##Functions
 ###################################################################################
 def tokenizer_fct(sentence) :
-    sentence_clean = sentence.replace('-', ' ').replace('/', ' ').replace('?', ' ')
+    sentence_clean = sentence.replace('-', ' ').replace('/', ' ')
     word_tokens = word_tokenize(sentence_clean)
     return word_tokens
     
