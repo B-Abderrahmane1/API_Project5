@@ -20,7 +20,7 @@ title = st.text_input('Titre de la Question')
 body = st.text_area('Corps de la Question')
 
 # Bouton pour prédire les tags
-if st.button('Prédire les Tags'):
+if st.button('Prédire'):
     if title and body:
         sentence = title+' '+body
         tags = predict_tags(sentence)
